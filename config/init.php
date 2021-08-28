@@ -1,9 +1,8 @@
 <?php
-// Config file
+// Config File
 require_once 'config.php';
 
 // Autoloader
-function __autoload($className)
-{
-  require_once 'lib/'.$className .'.php';
+function __autoload($class_name){
+	require_once 'lib/'.$class_name. '.php';
 }
